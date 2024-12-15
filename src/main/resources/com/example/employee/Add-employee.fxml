@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employee.Controllers.employeeController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <AnchorPane prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane prefHeight="35.0" prefWidth="1100.0" style="-fx-background-color: #efefef; -fx-border-color: #000; -fx-border-width: .2px  .4px .8px .4px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <Button layoutX="1025.0" layoutY="-13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="59.0" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-background-color: #ff3547;" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                            <graphic>
+                                                <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
+                                            </graphic>
+                                        </Button>
+                                        <Button layoutX="987.0" layoutY="2.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-background-color: #ddd;">
+                                            <graphic>
+                                                <FontAwesomeIconView glyphName="MINUS" size="1.2em" />
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </top>
+                    <left>
+                        <AnchorPane prefHeight="555.0" prefWidth="211.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutX="6.0" layoutY="70.0" prefHeight="554.4" prefWidth="211.2" style="-fx-background-color: linear-gradient(to bottom right, #272b3f,  #256b51);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <FontAwesomeIconView fill="#f2f0f0" glyphName="USER" layoutX="76.0" layoutY="86.0" size="7em" text="" />
+                                        <Label layoutX="68.0" layoutY="98.0" text="Welcome" textFill="#f2efef">
+                                            <font>
+                                                <Font name="Tahoma" size="17.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="2.0" layoutY="120.0" prefHeight="23.0" prefWidth="205.0" text="Directeur" textFill="#18a383">
+                                            <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Line endX="68.40000915527344" layoutX="122.0" layoutY="155.0" startX="-100.0" stroke="#efeaea" />
+                                        <Button layoutX="12.0" layoutY="195.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-family: Arial; -fx-font-size: 14px; -fx-text-fill: #fff; -fx-alignment: CENTRE-LEFT;" text="Home">
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#f7f2f2" glyphName="HOME" size="1.5em" />
+                                            </graphic>
+                                        </Button>
+                                        <Button layoutX="12.0" layoutY="253.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transprent; -fx-cursor: hand; -fx-font-family: Arial; -fx-font-size: 14px; -fx-text-fill: #fff; -fx-alignment: CENTRE-LEFT;" text="Add employee">
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#f7f2f2" glyphName="PLUS" size="1.5em" />
+                                            </graphic>
+                                        </Button>
+                                        <Button layoutX="12.0" layoutY="317.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-cursor: hand; -fx-font-family: Arial; -fx-font-size: 14px; -fx-text-fill: #fff; -fx-alignment: CENTRE-LEFT;" text="Employee Salary">
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#f7f2f2" glyphName="MONEY" size="1.5em" />
+                                            </graphic>
+                                        </Button>
+                                        <Button layoutX="14.0" layoutY="515.0" mnemonicParsing="false" style="-fx-effect: dropshadow(three-pass-box,  rgba(0,0,0,0.5), 6,0,0,0); -fx-background-color: #219a6a; -fx-background-radius: 10px; -fx-cursor: hand; -fx-background-color: #18a383;" text="Logout">
+                                            <graphic>
+                                                <FontAwesomeIconView glyphName="SIGN_OUT" />
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="addEmployee_Form" layoutX="6.0" layoutY="8.0" prefHeight="538.0" prefWidth="874.0" style="-fx-background-color: #fff; -fx-background-radius: 8px; -fx-effect: dropshadow(three-pass-box,  rgba(0,0,0,0.5), 6,0,0,0);">
+                           <children>
+                              <AnchorPane layoutX="9.0" layoutY="12.0" prefHeight="302.0" prefWidth="858.0" style="-fx-background-color: #fff; -fx-effect: dropshadow(three-pass-box,  rgba(0,0,0,0.5), 6,0,0,0);">
+                                 <children>
+                                    <TableView fx:id="employeeTable" layoutY="65.0" prefHeight="222.0" prefWidth="849.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-border-radius: 8px; -fx-padding: 0px; -fx-alignment: CENTER; -fx-text-fill: #fff;" styleClass=".column-header :#fff">
+                                      <columns>
+                                        <TableColumn fx:id="colEmployeeId" prefWidth="82.40004348754883" style="-fx-background-insets: 0 0 0 0; -f-background-radius: :8px 8px 0px 0px; -fx-size: 40px; -fx-font-family: &quot;Arial&quot;; -fx-text-fill: #fff;" text="Employee_ID" />
+                                        <TableColumn fx:id="colFirstName" prefWidth="114.40005493164062" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-size: 40px; -fx-font-family: &quot;Arial&quot;; -fx-text-fill: #fff;" text="First Name" />
+                                          <TableColumn fx:id="colLastName" prefWidth="122.39994812011719" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-font-family: &quot;Arial&quot;; -fx-size: 40px; -fx-text-fill: #fff;" text="Last Name" />
+                                          <TableColumn fx:id="colGender" prefWidth="121.5999755859375" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-font-family: &quot;Arial&quot;; -fx-size: 40px;" text="Gender" />
+                                          <TableColumn fx:id="colPhone" prefWidth="96.7999267578125" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-font-family: &quot;Arial&quot;; -fx-size: 40px;" text="Phone" />
+                                          <TableColumn fx:id="colPosition" prefWidth="160.79998779296875" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-font-family: &quot;Arial&quot;; -fx-size: 40px;" text="Position" />
+                                          <TableColumn fx:id="colDateMember" prefWidth="150.40008544921875" style="-fx-background-insets: 0 0 0 0; -f-background-radius: 8px 8px 0px 0px; -fx-font-family: &quot;Arial&quot;; -fx-size: 40px;" text="Date Member" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="addEmployee_search" layoutX="22.0" layoutY="24.0" prefHeight="30.0" prefWidth="277.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-border-radius: 5px; -fx-font-size: 13px; -fx-font-family: &quot;Arial&quot;; -fx-border-width: 1px; -fx-padding: 0px 0px 0px 28px; -fx-border-width: 2px;" />
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="28.0" layoutY="45.0" size="1.5em" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="31.0" layoutY="356.0" text="Employee_ID:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfEmployeeId" layoutX="126.0" layoutY="353.0" style="-fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-border-width: .8px; -fx-font-family: &quot;Tahoma&quot;; -fx-border-radius: 4px; -fx-border-width: 1.8px; -fx-background-color: #fff;" />
+                              <Label layoutX="31.0" layoutY="404.0" text="First Name:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfFirstName" layoutX="126.0" layoutY="401.0" style="-fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-font-family: &quot;Tahoma&quot;; -fx-border-width: .8px; -fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-width: 1.8px; -fx-border-radius: 4px; -fx-background-color: #fff;" />
+                              <Label layoutX="31.0" layoutY="444.0" text="Last Name:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfLastName" layoutX="126.0" layoutY="440.0" style="-fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-font-family: &quot;Tahoma&quot;; -fx-border-width: .8px; -fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-width: 1.8px; -fx-border-radius: 4px; -fx-background-color: #fff;" />
+                              <Label layoutX="31.0" layoutY="488.0" prefHeight="18.0" prefWidth="65.0" text="Gender:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="332.0" layoutY="364.0" prefHeight="18.0" prefWidth="80.0" text="Phone:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tfPhone" layoutX="412.0" layoutY="360.0" style="-fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-font-family: &quot;Tahoma&quot;; -fx-border-width: .8px; -fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-width: 1.8px; -fx-border-radius: 4px; -fx-background-color: #fff;" />
+                              <Label layoutX="332.0" layoutY="405.0" prefHeight="18.0" prefWidth="80.0" text="Position:">
+                                 <font>
+                                    <Font name="Tahoma" size="14.0" />
+                                 </font>
+                              </Label>
+
+                             
+
+                              <AnchorPane layoutX="726.0" layoutY="334.0" prefHeight="127.0" prefWidth="101.0" style="-fx-background-color: #fff; -fx-effect: dropshadow(three-pass-box,  rgba(0,0,0,0.5), 6,0,0,0);">
+                                 <children>
+                                    <Button fx:id="addEmployee_importBtn" layoutX="3.0" layoutY="97.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: #ddd; -fx-text-fill: red; -fx-cursor: hand;" text="Import" />
+                                    <ImageView fx:id="imgView" fitHeight="93.0" fitWidth="114.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="deleteEmployee" layoutX="733.0" layoutY="485.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #86253f; -fx-background-radius: 8px; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;; -fx-cursor: hand; -fx-background-color: #ae1d46;" text="Delete" />
+                              <Button fx:id="clearEmployee" layoutX="623.0" layoutY="485.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #753566; -fx-background-radius: 8px; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;; -fx-cursor: hand; -fx-background-color: #9d3485;" text="Clear" />
+                              <Button fx:id="updateEmployee" layoutX="489.0" layoutY="485.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #327252; -fx-background-radius: 8px; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;; -fx-cursor: hand; -fx-background-color: #309a65;" text="Update" />
+                              <Button fx:id="addEmployee" layoutX="379.0" layoutY="485.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #304575; -fx-background-radius: 8px; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-font-family: &quot;Arial&quot;; -fx-cursor: hand; -fx-background-color: #3357a4;" text="Add" />
+                              <TextField fx:id="tfGender" layoutX="126.0" layoutY="484.0" style="-fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-font-family: &quot;Tahoma&quot;; -fx-border-width: .8px; -fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-width: 1.8px; -fx-border-radius: 4px; -fx-background-color: #fff;" />
+                              <TextField fx:id="tfPosition" layoutX="412.0" layoutY="400.0" style="-fx-background-color: linear-gradient(to bottom, #efefef, #eee); -fx-border-color: linear-gradient(to bottom right, #272b3f, #256b51); -fx-border-width: .8px; -fx-font-family: &quot;Tahoma&quot;; -fx-border-radius: 4px; -fx-border-width: 1.8px; -fx-background-color: #fff;" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+                </BorderPane>
+                <FontAwesomeIconView glyphName="USERS" layoutX="14.0" layoutY="25.0" size="1.5em" />
+                <Label layoutX="42.0" layoutY="11.0" style="-fx-border-width: .4px  .4px  .2px  .4px;" text="Employee Management System">
+                    <font>
+                        <Font name="Tahoma" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
